@@ -1,12 +1,13 @@
 import './App.css'
 import { Editor } from './components/editor'
+import { Preview } from './components/preview'
 
 function App() {
   return (
     <div className='App'>
       <header className='App-header'>
         <Editor />
-        <textarea id={'editor'} />
+        <Preview />
         <div id={'preview'} />
       </header>
     </div>

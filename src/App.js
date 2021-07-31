@@ -14,7 +14,7 @@ function App() {
   return "I am foo"
   }
   \`\`\`
-  **bolded text**
+  **bold text**
   ![Picture of FCC](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
   `
 
@@ -25,6 +25,7 @@ function App() {
     gfm: true,
     breaks: true,
   }
+
   return (
     <div className='App'>
       <header className='App-header'>Markdown Previewer</header>

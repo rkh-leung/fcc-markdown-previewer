@@ -1,6 +1,5 @@
 import './App.css'
-import { Editor } from './components/editor'
-import { Preview } from './components/preview'
+import { MarkdownPreview } from './components/markdown-preview'
 
 function App() {
   const markdown = `# Header
@@ -21,8 +20,7 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <Editor markdown={markdown} />
-        <Preview markdown={markdown}/>
+        <MarkdownPreview markdown={markdown}/>
       </header>
     </div>
   )

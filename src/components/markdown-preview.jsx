@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import marked_1 from 'marked/lib/marked.esm'
 
-export const Preview = ({ markdown }) => {
-  const [input] = useState()
+export const MarkdownPreview = ({ markdown }) => {
+  const [input, setInput] = useState(markdown)
+  const handleChange = (e) => setInput(e.target.value)
   const opts = {
     baseUrl: null,
     breaks: false,
@@ -24,11 +25,14 @@ export const Preview = ({ markdown }) => {
     xhtml: false,
   }
   return (
-    <div
-      id={'preview'}
-      dangerouslySetInnerHTML={{
-        __html: marked_1(markdown, opts),
-      }}
-    />
+    <>
+      <textarea id={'editor'} value={input} onChange={handleChange} />
+      <div
+        id={'preview'}
+        dangerouslySetInnerHTML={{
+          __html: marked_1(markdown, opts),
+        }}
+      />
+    </>
   )
 }

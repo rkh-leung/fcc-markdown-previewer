@@ -1,7 +1,7 @@
 {
   "name": "markdown-previewer",
   "version": "0.1.0",
-  "homepage": "http://rkh-leung.github.io/markdown-previewer",
+  "homepage": "http://rkh-leung.github.io/fcc-markdown-previewer",
   "private": true,
   "license": "MIT",
   "dependencies": {

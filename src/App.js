@@ -5,7 +5,10 @@ import './App.css'
 function App() {
   const markdown = `# Header
   ## Sub header
-  [title](https://google.com)
+  [Google link](https://google.com)
+  
+  this is \`inline code\`
+  
   > this is a code block
   1. first list
   2. second list
